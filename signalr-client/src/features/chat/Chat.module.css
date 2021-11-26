@@ -1,0 +1,17 @@
+.chat_wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow: auto;
+    padding: 50px;
+}
+.chat_conversation {
+    flex: 1 1 auto;
+    overflow: auto;
+    background-color: #ddd;
+}
+.chat_input_wrapper {
+    flex: 0 0 auto;
+    padding: 1em;
+    background-color: #aaa;
+}

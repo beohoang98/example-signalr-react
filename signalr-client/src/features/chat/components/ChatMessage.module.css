@@ -1,0 +1,47 @@
+.wrapper {
+    margin: 1em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+}
+.name {
+    font-weight: bold;
+    font-size: 0.75em;
+    font-style: italic;
+    padding: 0.5em;
+}
+.message {
+    padding: 0.5em 1em;
+    width: 300px;
+    max-width: 100%;
+    background-color: #fff;
+    border-radius: 2em;
+    animation: msg_appear 0.4s both;
+}
+
+.is_mine {
+    flex-direction: row-reverse;
+}
+.is_mine .message {
+    background-color: #558;
+    color: white;
+    border-radius: 2em;
+}
+
+.event {
+    justify-content: center;
+    font-size: 0.6em;
+    margin: 2em;
+    text-align: center;
+}
+
+@keyframes msg_appear {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
